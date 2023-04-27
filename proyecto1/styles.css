@@ -1,0 +1,77 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #eaa974;
+    --secundario: #4e90d6;
+    --gris: #484848;
+
+    --maquina: 'Roboto Mono', monospace;
+    --laila: 'Laila', sans-serif;
+}
+
+/* ==============Reseteo de valores documento html=============== */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--laila);
+}
+
+/* ============================================================== */
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: var(--maquina);
+    color: var(--oscuro);
+}
+
+h1.titulo span {
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color:var(--oscuro);
+}
+
+body{
+    background-color: yellowgreen;
+    font-size: 4rem;
+}
+
+@media(max-width: 400px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media(min-width: 768px){
+    body{
+        background-color: cornflowerblue;
+    }
+}
