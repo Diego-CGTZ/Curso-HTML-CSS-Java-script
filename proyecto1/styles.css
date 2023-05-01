@@ -1,7 +1,7 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #eaa974;
+    --primario: #eaea74;
     --secundario: #4e90d6;
     --gris: #484848;
 
@@ -33,7 +33,7 @@ h1.titulo span {
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -43,13 +43,22 @@ h1.titulo span {
 
 .navegacion-principal{
     display: flex; 
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a{
+    display: block;
+    text-align: center;
     color: var(--blanco);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 2rem;
 }
@@ -59,19 +68,22 @@ h1.titulo span {
     color:var(--oscuro);
 }
 
-body{
-    background-color: yellowgreen;
-    font-size: 4rem;
-}
-
-@media(max-width: 400px){
+@media (max-width: 400px){
     body{
-        background-color: blue;
     }
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px){
     body{
-        background-color: cornflowerblue;
     }
+}
+
+.hero{
+    background-image: url(img/earth-g78c8f5c2b_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .titulo{
+    color: var(--blanco);
 }
